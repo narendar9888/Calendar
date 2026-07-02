@@ -8,15 +8,25 @@ src/
 ├── components/
 │   └── Calendar/
 │       ├── Header.jsx
+|       ├── Header.css
 │       ├── Sidebar.jsx
+│       ├── Sidebar.css
 │       ├── MonthView.jsx
+│       ├── MonthView.css
 │       ├── WeekView.jsx
+│       ├── WeekView.css
 │       ├── DayView.jsx
+│       ├── DayView.css
 │       ├── EventCard.jsx
+│       ├── EventCard.css
 │       ├── EventModal.jsx
+│       ├── EventModal.css
 │       ├── MiniCalendar.jsx
+│       ├── MiniCalendar.css
 │       ├── SearchBar.jsx
+│       ├── SearchBar.css
 │       ├── Toolbar.jsx
+│       ├── Toolbar.css
 │       └── CalendarUtils.js
 │
 ├── hooks/
