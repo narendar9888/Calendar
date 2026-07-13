@@ -24,3 +24,11 @@ export const WEEK_DAYS = [
 ];
 
 export const today = () => new Date();
+
+
+
+// Format Month
+
+export const formatMonth = (date) => {
+    return `${MONTH[date.getMonth()]} ${date.getFullYear()}`;
+};
