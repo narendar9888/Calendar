@@ -1,6 +1,6 @@
 import React from "react";
 import { formatMonth } from "./CalendarUtils";
-
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 
 function Header() {
@@ -11,14 +11,16 @@ function Header() {
 
                 <button 
                     className="today-btn"
-                    onClick={goToToday}
+                    // onClick={goToToday}
                 >
                     Today
                 </button>
             </div>
 
             <div className="header-center">
-                
+                <button>
+
+                </button>
             </div>
         </div>
     )
