@@ -1,5 +1,5 @@
 // Month Names
-export const MONTH = [
+export const MONTHS = [
     "January",
     "February",
     "March",
@@ -38,6 +38,6 @@ export const startOfMonth = (date) => {
 // Format Month
 
 export const formatMonth = (date) => {
-    return `${MONTH[date.getMonth()]} ${date.getFullYear()}`;
+    return `${MONTHS[date.getMonth()]} ${date.getFullYear()}`;
 };
 

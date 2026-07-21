@@ -11,16 +11,20 @@ function Header() {
 
                 <button 
                     className="today-btn"
-                    // onClick={goToToday}
+                   
                 >
                     Today
                 </button>
             </div>
 
             <div className="header-center">
-                <button>
-
+                <button
+                    className="nav-btn"
+                >
+                    <FaChevronLeft />
                 </button>
+
+                <h2>{formatMonth(currentDate)}</h2>
             </div>
         </div>
     )
