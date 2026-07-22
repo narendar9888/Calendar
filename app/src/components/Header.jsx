@@ -1,9 +1,17 @@
 import React from "react";
 import { formatMonth } from "./CalendarUtils";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
+import { useCalendar } from "./context/CalendarContext"
 
 function Header() {
+    const {
+        currentDate,
+        previousMonth,
+        nextMonth,
+        goToToday,
+        toggleDarkMode
+    } = useCalendar();
+
     return (
         <div>
             <div className="header-left">
