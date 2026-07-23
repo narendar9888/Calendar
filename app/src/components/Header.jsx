@@ -1,8 +1,7 @@
 import React from "react";
 import { formatMonth } from "./CalendarUtils";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { useCalendar } from "./context/CalendarContext"
-
+import { useCalendar } from "../context/CalendarContext";
 function Header() {
     const {
         currentDate,
@@ -13,13 +12,13 @@ function Header() {
     } = useCalendar();
 
     return (
-        <div>
+        <header className={`calender-header ${darkMode ? "dark" : ""}`}>
             <div className="header-left">
                 <h1 className="logo">Calendar App</h1>
 
                 <button 
                     className="today-btn"
-                   
+                   onClick={goToToday}
                 >
                     Today
                 </button>
@@ -34,7 +33,7 @@ function Header() {
 
                 <h2>{formatMonth(currentDate)}</h2>
             </div>
-        </div>
+        </header>
     )
 };
 

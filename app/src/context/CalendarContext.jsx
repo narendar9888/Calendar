@@ -34,8 +34,30 @@ export const CalendarProvider = ({children}) => {
         );
     };
 
+    const goToToday = () => {
+        setCurrentDate(new Date());
+        setSelectDate(new Date());
+    };
+
     const toggleDarkMode = () => {
         setDarkMode((prev) => !prev);
+    };
+
+    const value = {
+        currentDate,
+        setCurrentDate,
+
+
+
+        showModal,
+        setShowModal,
+
+        previousMonth,
+        nextMonth,
+        goToToday,
+
+        darkMode,
+        toggleDarkMode,
     };
 
     return (
@@ -50,7 +72,7 @@ export const useCalendar = () => {
     const context = useContext(CalendarContext);
 
     if(!context) {
-        throw new Error (
+        throw new Error(
             "useCalendar must be used inside CalendarProvider"
         );
     }
