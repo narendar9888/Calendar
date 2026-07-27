@@ -72,11 +72,11 @@ export const CalendarProvider = ({children}) => {
 export const useCalendar = () => {
     const context = useContext(CalendarContext);
 
-    if(!context) {
-        throw new Error(
-            "useCalendar must be used inside CalendarProvider"
-        );
-    }
+    // if(!context) {
+    //     throw new Error(
+    //         "useCalendar must be used inside CalendarProvider"
+    //     );
+    // }
 
     return context;
 };
@@ -87,3 +87,4 @@ export const useCalendar = () => {
 
 
 export default CalendarContext;
+
