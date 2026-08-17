@@ -15,4 +15,16 @@ export default function useLocalStorage(key, initialValue) {
             return initialValue;
         }
     };
-}
+
+    const [storedValue, setStoredValue] = useState(readValue);
+
+    useEffect(() => {
+        try {
+            localStorage.setItem(key, JSON.stringify(storedValue));
+        } catch (error) {
+            console.error("Error saving to localStorage:", error);
+        }
+    }, [key, storedValue]);
+
+    return [storedValue, setStoredValue];
+};
