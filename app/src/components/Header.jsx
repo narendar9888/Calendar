@@ -1,4 +1,5 @@
 import React from "react";
+import "./Header.css"
 import { formatMonth } from "./CalendarUtils";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useCalendar } from "../context/CalendarContext";
@@ -15,7 +16,7 @@ function Header() {
     } = useCalendar();
 
     return (
-        <header className={`calender-header ${darkMode ? "dark" : ""}`}>
+        <header className={`calendar-header ${darkMode ? "dark" : ""}`}>
 
             <div className="header-left">
                 <h1 className="logo">Calendar App</h1>
