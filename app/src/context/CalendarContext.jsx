@@ -5,15 +5,50 @@ const CalendarContext = createContext();
 
 export const CalendarProvider = ({children}) => {
 
+    // current date
+
     const [currentDate, setCurrentDate] = useState(new Date());
 
+    // current view
+
     const [view, setView] = useState("month");
+
+    // search filter
+
+    const [search, setSearch] = useState("");
+
+    // category filter
+
+    const [category, setCategory] = useState("All");
+
+    // seleted date
+
+    const [selectedDate, setSelectDate] = useState(new Date());
+    
+    // modal 
+    const [showModal, setShowModal] = useState(false);
+
+    // Dark Mode
 
     const [darkMode, setDarkMode] = useLocalStorage(
         "calendar-dark",
         false
     );
 
+    // open Modal
+
+    const openModal = () => {
+        setShowModal(true);
+    };
+
+    // close Modal
+
+    const closeModal = () => {
+        setShowModal(false);
+    };
+
+
+    
     const previousMonth = () => {
         setCurrentDate(
             new Date(
@@ -23,6 +58,8 @@ export const CalendarProvider = ({children}) => {
             )
         );
     };
+
+
 
     const nextMonth = () => {
         setCurrentDate(
@@ -47,14 +84,31 @@ export const CalendarProvider = ({children}) => {
         currentDate,
         setCurrentDate,
 
+        selectedDate,
+        setSelectDate,
 
+        showModal,
+        setShowModal,
+
+        openModal,
+        closeModal,
 
         previousMonth,
         nextMonth,
         goToToday,
 
+        view,
+        setView,
+
+        search,
+        setSearch,
+
+        category,
+        setCategory,
+
         darkMode,
-        toggleDarkMode,
+        toggleDarkMode
+
     };
 
     return (
@@ -78,9 +132,4 @@ export const useCalendar = () => {
 };
 
 export default CalendarContext;
-
-
-
-
-
 

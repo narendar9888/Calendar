@@ -1,9 +1,11 @@
-import Calendar from "./pages/Calendar";
+// import Calendar from "./pages/Calendar";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="app">
-      <Calendar />
+      {/* <Calendar /> */}
+      < Header/>
     </div>
   );
 }
