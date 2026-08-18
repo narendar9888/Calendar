@@ -74,44 +74,6 @@ src/
 
 ---
 
-# 📦 Installation
-
-Clone the repository:
-
-```bash
-git clone <repository-url>
-```
-
-Go to the project folder:
-
-```bash
-cd calendar-app
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-Build the production version:
-
-```bash
-npm run build
-```
-
-Preview the production build:
-
-```bash
-npm run preview
-```
-
 ---
 
 # 📋 Available Features
