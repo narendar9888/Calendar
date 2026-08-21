@@ -14,6 +14,7 @@
 
 
 import Header from "./components/Header";
+import MonthView from "./components/MonthView";
 import { CalendarProvider } from "./context/CalendarContext";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
     <CalendarProvider>
       <div className="app">
         <Header/>
+        <MonthView/>
       </div>
     </CalendarProvider>
   )
