@@ -1,9 +1,12 @@
 import Calendar from "./pages/Calendar";
 
 function App() {
-  <div className="app">
-    <Calendar/>
-  </div>
+  return(
+    <div className="app">
+      <Calendar/>
+    </div>
+  )
 }
 
 export default App;
+
