@@ -21,12 +21,12 @@ function Header() {
             <div className="header-left">
                 <h1 className="logo">Calendar App</h1>
 
-                <button 
+                {/* <button 
                     className="today-btn"
                    onClick={goToToday}
                 >
                     Today
-                </button>
+                </button> */}
             </div>
 
 

@@ -115,7 +115,7 @@
     transform: translateX(5px);
 }
 
-.today-btn {
+/* .today-btn {
     border: none;
     padding: 12px 18px;
 
@@ -134,7 +134,7 @@
 .today-btn:hover {
     background: #090252;
     transform: translateY(2px);
-}
+} */
 
 .theme-btn {
     border: none;

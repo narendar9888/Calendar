@@ -1,0 +1,70 @@
+.cal-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f5f7fb;
+    padding: 20px;
+    overflow: hidden;
+}
+
+
+.cal-page.dark {
+    background: #111827;
+    color: #fff;
+}
+
+.cal-layout {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.cal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.cal-view {
+    flex: 1;
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    overflow: auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+.dark .cal-view {
+    background: #111827;
+}
+
+@media (max-width: 1000px) {
+    .cal-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .left-panel {
+        order: 2;
+    }
+
+    .cal-content {
+        order: 1;
+    } 
+
+}
+
+@media (max-width: 700px) {
+    .cal-page {
+        padding: 10px;
+    }
+}

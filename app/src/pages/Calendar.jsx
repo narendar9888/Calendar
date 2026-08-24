@@ -4,6 +4,7 @@ import "./Calendar.css";
 import { useCalendar } from "../context/CalendarContext";
 
 import Header from "../components/Header";
+import SearchBar from "../components/SearchBar";
 
 
 import MonthView from "../components/MonthView";
@@ -29,6 +30,8 @@ function Calendar() {
 
 
                 <main className="cal-content">
+
+                    <SearchBar/>
 
                     <div className="cal-view">
 
