@@ -101,3 +101,42 @@
 .mini-day.today.selected {
     background: #312e81;
 }
+
+@media (max-width: 480px) {
+    .mini-cal{
+        padding: 12px;
+    }
+
+    .mini-day {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .weekday {
+        font-size: 12px;
+    }
+
+    .mini-header button{
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 780px) {
+    .mini-cal {
+        padding: 15px;
+    }
+
+
+    .mini-day {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .mini-header h3{
+        font-size: 14px;
+    }
+}
