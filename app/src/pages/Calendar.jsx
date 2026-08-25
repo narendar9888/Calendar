@@ -5,6 +5,7 @@ import { useCalendar } from "../context/CalendarContext";
 
 import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
+import Toolbar from "../components/Toolbar";
 
 
 import MonthView from "../components/MonthView";
@@ -22,6 +23,7 @@ function Calendar() {
         <div className={`cal-page ${darkMode ? "dark" : ""}`}>
             <Header />
 
+            <Toolbar/>
 
             <div className="cal-layout">
                 <aside className="left-panel">
