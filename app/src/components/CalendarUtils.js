@@ -98,3 +98,27 @@ export const isSameDay = (d1, d2) => {
 export const isToday = (date) => {
     return isSameDay(date, new Date());
 };
+
+
+const cloneDate = (date) => {
+    return new Date(date.getTime());
+}
+
+
+export const getWeekDates = (date) => {
+    const current = cloneDate(date);
+
+    const day = current.getDay();
+
+    current.setDate(current.getDate() - day);
+    
+    const week = [];
+
+    for(let i = 0; i < 7; i++){
+        week.push(cloneDate(current));
+
+        current.setDate(current.getDate() + 1);
+    }
+
+    return week;
+}

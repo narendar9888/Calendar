@@ -9,7 +9,7 @@ import Toolbar from "../components/Toolbar";
 
 
 import MonthView from "../components/MonthView";
-
+import WeekView from "../components/WeekView";
 
 import MiniCalendar from "../components/MiniCalendar";
 
@@ -38,6 +38,8 @@ function Calendar() {
                     <div className="cal-view">
 
                         {view === "month" && <MonthView/>}
+                        
+                        {view === "week" && <WeekView/>}
 
                     </div>
 
