@@ -9,7 +9,7 @@ export const CalendarProvider = ({children}) => {
     const [currentDate, setCurrentDate] = useState(new Date());
 
 
-    const [view, setView] = useState("month");
+    const [view, setView] = useState("week");
 
 
     const [search, setSearch] = useState("");
@@ -19,6 +19,8 @@ export const CalendarProvider = ({children}) => {
 
 
     const [selectedDate, setSelectDate] = useState(new Date());
+
+    const [selectedEvent, setSelectedEvent] = useState(null);
     
     const [showModal, setShowModal] = useState(false);
 
@@ -27,6 +29,53 @@ export const CalendarProvider = ({children}) => {
         "calendar-dark",
         false
     );
+
+    const [events, setEvents] = useLocalStorage(
+        "cal-events",
+        [
+            {
+                id: 1,
+                title: "React Class",
+                description: "Frontend Development",
+                date: "2026-09-01",
+                time: "10:00",
+                category: "Study",
+                color: "#4F46E5"
+            },
+            {
+                id: 2,
+                title: "Gym",
+                description: "Workout",
+                date: "2026-09-22",
+                time: "07:00",
+                category: "Health",
+                color: "#10B981",
+            },
+        ]
+    );
+
+    const addevent = (event) => {
+        const newEvent = {
+            id: Date.now(),
+            color: "#4f46e5",
+            ...event,
+        };
+        setEvents((prev) => [...prev, newEvent]);
+    };
+
+    const updateEvent = (updateEvent) => {
+        setEvents((prev) =>
+            prev.map((event)=>
+                event.id === updateEvent.id ? updateEvent : event
+            )
+        );
+    };
+
+    const deleteEvent = (id) => {
+        setEvents((prev) =>
+            prev.filter((event) => event.id !== id)
+        );
+    };
 
 
     const openModal = () => {
@@ -77,6 +126,16 @@ export const CalendarProvider = ({children}) => {
 
         selectedDate,
         setSelectDate,
+
+        selectedEvent,
+        setSelectedEvent,
+
+        events,
+        setEvents,
+
+        addevent,
+        updateEvent,
+        deleteEvent,
 
         showModal,
         setShowModal,
