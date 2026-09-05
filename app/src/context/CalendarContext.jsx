@@ -9,7 +9,7 @@ export const CalendarProvider = ({children}) => {
     const [currentDate, setCurrentDate] = useState(new Date());
 
 
-    const [view, setView] = useState("week");
+    const [view, setView] = useState("month");
 
 
     const [search, setSearch] = useState("");

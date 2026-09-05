@@ -1,0 +1,204 @@
+.cal-sidebar {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.add-e-btn {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 15px;
+    background: #4f46e5;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.add-e-btn:hover {
+    background: #4338ca;
+    transform: translateY(-2px);
+}
+
+.side-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-sec h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.side-sec button {
+    border: none;
+    background: #f3f4f6;
+    padding: 12px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+    font-size: 14px;
+}
+
+
+.side-sec button:hover{
+    background: #caced6;
+}
+
+.side-sec button.active {
+    background: #4f46e5;
+    color: white;
+}
+
+.side-sec input, 
+.side-sec select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+.side-sec input:focus,
+.side-sec select:focus {
+    border-color: #4f46e5;
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border-radius: 15px;
+    background: #f9fafb;
+    cursor: pointer;
+    transition: 0.45s;
+}
+
+.event-item:hover {
+    background: #eef2ff;
+    transform: translateX(4px);
+}
+
+.event-color {
+    width: 15px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.event-info {
+    flex: 1;
+}
+
+.event-info h4 {
+    margin: 0;
+    font-size: 15px;
+    color: #111827;
+}
+
+.event-info p {
+    margin: 4xp 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.empty-text {
+    text-align: center;
+    color: #9ca3af;
+    padding: 20px;
+}
+
+
+.dark .cal-sidebar {
+    background: #111827;
+}
+
+.dark .side-sec h3 {
+    color: #f3f4f6;
+}
+
+.dark .side-sec button {
+    color: white;
+    background: #374151;
+}
+
+.dark .side-sec button:hover {
+    background: #4b5563;
+}
+
+.dark .side-sec button.active {
+    background: #4f46e5;
+}
+
+.dark .side-sec input,
+.dark .side-sec select {
+    background: #374151;
+    color: white;
+    border-color: #4b5563;
+}
+
+.dark .event-item {
+    background: #374151;
+}
+
+.dark .event-item:hover {
+    background: #4f46e5;
+}
+
+.dark .event-info h4 {
+    color: white;
+}
+
+.dark .event-info p,
+.dark .event-info small,
+.dark .empty-text {
+    color: #d1d5db;
+}
+
+@media (max-width: 990px) {
+    .cal-sidebar {
+        padding: 18px;
+    }
+}
+
+
+
+@media (max-width:765px) {
+    .cal-sidebar{
+        padding: 15px;
+        gap: 18px;
+    }
+
+    .side-sec button {
+        justify-content: center;
+    }
+
+    .event-item {
+        padding: 10px;
+    }
+
+    .event-color{
+        height: 50px;
+    }
+}

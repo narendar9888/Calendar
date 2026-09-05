@@ -6,6 +6,7 @@ import { useCalendar } from "../context/CalendarContext";
 import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
 import Toolbar from "../components/Toolbar";
+import Sidebar from "../components/Sidebar";
 
 
 import MonthView from "../components/MonthView";
@@ -28,6 +29,7 @@ function Calendar() {
             <div className="cal-layout">
                 <aside className="left-panel">
                     <MiniCalendar/>
+                    <Sidebar/>
                 </aside>
 
 
