@@ -13,6 +13,7 @@ import MonthView from "../components/MonthView";
 import WeekView from "../components/WeekView";
 
 import MiniCalendar from "../components/MiniCalendar";
+import EventModal from "../components/EventModal";
 
 function Calendar() {
     const {
@@ -50,6 +51,7 @@ function Calendar() {
                 </main>
             </div>
 
+            {showModal && <EventModal/>}
         </div>
     );
 };

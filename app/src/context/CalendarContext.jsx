@@ -63,13 +63,14 @@ export const CalendarProvider = ({children}) => {
         setEvents((prev) => [...prev, newEvent]);
     };
 
-    const updateEvent = (updateEvent) => {
+    const updateEvent = (updatedEvent) => {
         setEvents((prev) =>
-            prev.map((event)=>
-                event.id === updateEvent.id ? updateEvent : event
-            )
+            prev.map((event) =>
+                event.id === updatedEvent.id ? updatedEvent : event
+        )
         );
     };
+
 
     const deleteEvent = (id) => {
         setEvents((prev) =>
@@ -78,7 +79,8 @@ export const CalendarProvider = ({children}) => {
     };
 
 
-    const openModal = () => {
+    const openModal = (event = null) => {
+        setSelectedEvent(event);
         setShowModal(true);
     };
 
