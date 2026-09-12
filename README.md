@@ -125,11 +125,57 @@ All events are automatically saved in the browser using Local Storage.
 # 📸 Screens
 
 * Dashboard
-* Month Calendar
+### Dashboard View
+
+![Dashboard View](./app/public/Dashboard%201.png)
+
+### Dashboard View
+
+![Dashboard View](./app/public/Dashboard%202.png)
+
+
+### Month View
+
+![Month View](./app/public/Month%20Calendar%201.png)
+
+### Month View
+
+![Month View](./app/public/Month%20Calendar%202.png)
+
 * Week Calendar
+
+### Week View
+
+![Week View](./app//public/Week%20Calendar%201.png)
+
+### Week View
+
+![Week View](./app//public/Week%20Calendar%202.png)
 * Day Calendar
+
+### Day View
+![Day View](./app/public/Day%20Calendar%201.png)
+
+### Day View
+
+![Day View](./app/public/Day%20Calendar%202.png)
 * Add Event Modal
+
+### Add Event
+![Add Event View](./app/public/Add%20Event%201.png)
+
+### Add Event
+![Add Event View](./app/public/Add%20Event%202.png)
+
 * Edit Event Modal
+
+### Edit Event
+
+![Edit Event](./app/public/Edit%201.png)
+
+### Edit Event
+
+![Edit Event](./app/public/Edit%202.png)
 
 ---
 
@@ -153,10 +199,17 @@ All events are automatically saved in the browser using Local Storage.
 
 ---
 
-# 👨‍💻 Author
+
 
 **Narendar Kumar**
 
 Frontend Developer | React Developer | JavaScript Enthusiast
 
+---
+---
+
+💛 Made With Love by Narendar Kumar
+<p align="center"> <img src="https://img.shields.io/badge/Made%20by-Narendar%20Kumar-ffcc00?style=for-the-badge&logo=heart&logoColor=white" /> </p>
+
+---
 ---
