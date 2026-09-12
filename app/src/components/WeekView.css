@@ -69,6 +69,7 @@ w-events {
     color: #fff;
     cursor: pointer;
     transition: 0.25s;
+    margin-bottom: 10px;
 }
 
 .w-event:hover{

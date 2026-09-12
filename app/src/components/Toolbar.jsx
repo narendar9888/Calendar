@@ -68,7 +68,7 @@ function Toolbar() {
                     <span>New Event</span>
                 </button>
 
-                <button
+                {/* <button
                     className="theme-btn"
                     onClick={toggleDarkMode}
                 >
@@ -83,7 +83,7 @@ function Toolbar() {
                             <span>Dark</span>
                         </>
                     )}
-                </button>
+                </button> */}
             </div>
         </div>
     );

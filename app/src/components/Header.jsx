@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css"
 import { formatMonth } from "./CalendarUtils";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaSun, FaMoon } from "react-icons/fa";
 import { useCalendar } from "../context/CalendarContext";
 
 
@@ -53,7 +53,18 @@ function Header() {
                 className="theme-btn"
                 onClick={toggleDarkMode}
                 >
-                    {darkMode ? "Light" : "Dark"}
+                    {darkMode ? (
+                        <>
+                            <FaSun/>
+                            <span>Light</span>
+
+                        </>
+                    ) : (
+                        <>
+                            <FaMoon/>
+                            <span>Dark</span>
+                        </>
+                    )}
                 </button>
             </div>
         </header>

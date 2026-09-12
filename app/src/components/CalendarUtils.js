@@ -43,6 +43,9 @@ export const startOfMonth = (date) => {
     return new Date(date.getFullYear(), date.getMonth(), 1);
 };
 
+export const endOfMonth = (date) => {
+    return new Date(date.getFullYear(), date.getMonth() + 1, 0)
+}
 
 // daysinmonth function 
 export const daysInMonth = (date) => {

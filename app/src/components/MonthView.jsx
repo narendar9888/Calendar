@@ -105,7 +105,7 @@ const MonthView = () => {
                                             }}
                                         >
                                             {event.time && 
-                                            `${event.title}`}
+                                              `${event.time} `}
                                             {event.title}
                                         </div>
                                     ))}
