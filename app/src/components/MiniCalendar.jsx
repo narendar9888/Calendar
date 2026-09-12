@@ -15,7 +15,7 @@ import {
 function MiniCalendar() {
     const {
         currentDate,
-        setCurrentDate,
+        // setCurrentDate,
         selectedDate,
         setSelectedDate,
         prevMonth,

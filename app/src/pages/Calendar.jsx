@@ -11,6 +11,7 @@ import Sidebar from "../components/Sidebar";
 
 import MonthView from "../components/MonthView";
 import WeekView from "../components/WeekView";
+import DayView from "../components/DayView";
 
 import MiniCalendar from "../components/MiniCalendar";
 import EventModal from "../components/EventModal";
@@ -43,6 +44,8 @@ function Calendar() {
                         {view === "month" && <MonthView/>}
                         
                         {view === "week" && <WeekView/>}
+
+                        {view === "day" && <DayView/>}
 
                     </div>
 

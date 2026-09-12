@@ -1,0 +1,168 @@
+.day-view {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.day-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 22px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.day-header h2 {
+    font-size: 26px;
+    color: #111827;
+    font-weight: 700;
+}
+
+.day-header span {
+    background: #4f46e5;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.day-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.day-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.event-header h3 {
+    font-size: 22px;
+    color: #111827;
+}
+
+.category {
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.event-time {
+    color: #4f46e5;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.event-des {
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.event-date {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+.no-events {
+    background: #fff;
+    border-radius: 15px;
+    padding: 60px 30px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.no-events h3 {
+    color: #4f46e5;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.no-events p {
+    color: #6b7280;
+}
+
+.dark .day-header,
+.dark .day-card,
+.dark .no-events {
+    background: #1f2937;
+}
+
+.dark .day-header h2,
+.dark .event-header h3 {
+    color: #fff;
+}
+
+.dark .event-des,
+.dark .event-date,
+.dark .no-events p {
+    color: #d1d5db;
+}
+
+@media (max-width: 768px) {
+    .day-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .day-header h2 {
+        font-size: 22px;
+    }
+
+    .event-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .day-card {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .day-header {
+        padding: 15px;
+    }
+
+    .day-header h2 {
+        font-size: 20px;
+    }
+
+    .day-card {
+        padding: 15px;
+    }
+
+    .event-header h3 {
+        font-size: 18px;
+    }
+
+    .category {
+        font-size: 12px;
+        padding: 5px 18px;
+    }
+
+
+    .event-des {
+        font-size: 14px;
+    }
+}

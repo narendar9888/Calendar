@@ -93,7 +93,27 @@ export const isSameDay = (d1, d2) => {
 };
 
 
+export const formatDate = (date) => {
+    return `${date.getDate()} ${
+        MONTHS[date.getMonth()]
+    } ${date.getFullYear()}`
+};
 
+export const formatTime = (time) => {
+    if (!time) return "";
+
+    let [hour, minute] = time.split(":")
+
+    hour = parseInt(hour);
+
+    const suffix = hour >= 12 ? "PM" : "AM";
+
+    hour = hour % 12;
+
+    if (hour === 0) hour = 12;
+
+    return `${hour}:${minute} ${suffix}`
+}
 
 export const isToday = (date) => {
     return isSameDay(date, new Date());
