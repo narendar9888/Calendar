@@ -40,7 +40,7 @@ function DayView() {
     });
 
     filteredEvents.sort((a, b) => {
-        retrun (
+        return (
             new Date(`${a.date} ${a.time || "00:00"}`) - 
             new Date(`${b.date} ${b.time || "00:00"}`)
         );

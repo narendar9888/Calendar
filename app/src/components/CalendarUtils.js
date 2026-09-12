@@ -29,13 +29,13 @@ export const formatMonth = (date) => {
 
 //  Week Days
 export const WEEK_DAYS = [
-    "Sun",
     "Mon",
     "Tue",
     "Wed",
     "Thu",
     "Fri",
-    "Sat"
+    "Sat",
+    "Sun"
 ];
 
 // Start of Month
